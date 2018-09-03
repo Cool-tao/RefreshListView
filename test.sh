@@ -13,14 +13,14 @@ readonly CREATE_TAG_NAME=$4
 readonly CREATE_TAG_MESSAGE=$5
 
 echo "********** 切换到DEV分支并提交 **********"
-git checkout ${BRANCH_DEV}
+git checkout dev
 git merge ${CUR_BRANCH}
-git push origin ${BRANCH_DEV}
+git push origin dev
 
 echo "********** 切换到MASTER分支并提交 **********"
-git checkout ${BRANCH_MASTER}
+git checkout master
 git merge ${CUR_BRANCH}
-git push origin ${BRANCH_MASTER}
+git push origin master
 
 echo "********** 查看当前所在分支 **********"
 git branch -v
