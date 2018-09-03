@@ -3,10 +3,6 @@ echo "********** 第1步 **********"
 
 #需要合并的分支
 readonly CUR_BRANCH=$1
-#DEV分支
-#readonly BRANCH_DEV=$2
-#MASTER分支
-#readonly BRANCH_MASTER=$3
 #分支名称
 readonly CREATE_TAG_NAME=$2
 #创建的分支简介
