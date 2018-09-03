@@ -4,13 +4,13 @@ echo "********** 第1步 **********"
 #需要合并的分支
 readonly CUR_BRANCH=$1
 #DEV分支
-readonly BRANCH_DEV=$2
+#readonly BRANCH_DEV=$2
 #MASTER分支
-readonly BRANCH_MASTER=$3
+#readonly BRANCH_MASTER=$3
 #分支名称
-readonly CREATE_TAG_NAME=$4
+readonly CREATE_TAG_NAME=$2
 #创建的分支简介
-readonly CREATE_TAG_MESSAGE=$5
+readonly CREATE_TAG_MESSAGE=$3
 
 echo "********** 切换到DEV分支并提交 **********"
 git checkout dev
